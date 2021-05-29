@@ -1,0 +1,44 @@
+<table v-for="(product, index) in tableData"
+          :key="index" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th> </th>
+                            <th scope="col" style="color:DarkSlateBlue">Items</th>
+                            <th scope="col" style="color:DarkSlateBlue">Quantity</th>
+                            <th scope="col" style="color:DarkSlateBlue">Price</th>
+                            <th> </th>
+                        </tr>
+                    </thead>
+                    
+                      <tr>
+                        <td></td>
+                        <td style="color:DarkSlateBlue">{{product.name}}</td>
+                        <td style="color:DarkSlateBlue">{{product.quantity}}</td>
+                        <td style="color:DarkSlateBlue">{{product.price}}</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td style="color:DarkSlateBlue">Aqua</td>
+                        <td style="color:DarkSlateBlue">1</td>
+                        <td style="color:DarkSlateBlue">2.500</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td style="color:DarkSlateBlue">Tricks</td>
+                        <td style="color:DarkSlateBlue">2</td>
+                        <td style="color:DarkSlateBlue">2.000</td>
+                        <td></td>
+                      </tr>
+                      <thead>
+                      <tr>
+                        <th></th>
+                        <th style="color:DarkSlateBlue">Total</th>
+                        <th style="color:DarkSlateBlue">6</th>
+                        <th style="color:DarkSlateBlue">{{+ product.price}}</th>
+                        <th></th>
+                      </tr>
+                      </thead>
+                    
+                </table>
